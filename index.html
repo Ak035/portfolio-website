@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Arnab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0aced0bc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/DESIGN.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Certification</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+       <div class="header-text">
+            <p class="animate-text delay-1">Software Engineer</p>
+            <h1 class="animate-text delay-2">
+                Hi, I am <span>Arnab</span><br>From India
+            </h1>
+        </div>
+    </div>
+</div>
+
+<!--------About section--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Professional portrait with business attire.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m a Software Engineer who enjoys building clear, reliable, and meaningful digital solutions. I focus on writing clean code, understanding problems deeply, and turning ideas into well-structured applications.
+
+                    As an engineering student, I’ve worked on real-world projects that strengthened my approach to problem-solving, system thinking, and continuous learning. I care about simplicity, maintainability, and creating software that is easy to use and easy to improve.
+
+                    I’m driven by curiosity, enjoy learning how things work under the hood, and aim to grow into an engineer who builds software with both purpose and precision.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('programming')">Programming</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('coding profile')">Coding Profile</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        <li><span>Web Development</span><br>HTML, CSS, React, JavaScript,  </li>
+                        <li><span>Database Management</span><br>MySql, MongoDB</li>
+                        <li><span>Data Analytics</span><br>Python, Data Cleaning, SQL, Statistics, PowerBI, Excel</li>
+                        <li><span>Developer Tool</span><br>Git / GitHub</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="programming">
+                    <ul>
+                        <li><span>C / C++</span><br></li>
+                        <li><span>Python</span><br></li>
+                        <li><span>JavaScript</span><br></li>
+                        <li><span>HTML & CSS</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>Btech from Techno International Newtown </li>
+                        <li><span>2021</span><br>Higher Secondary from Andharia Raj Ballav High School School</li>
+                        <li><span>2019</span> <br>Secondary from Jhargram Banitirtha High School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="coding profile">
+                    <ul>
+                        <li><a href="https://leetcode.com/u/arnabkundu035/">LeetCode</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------Certifications section---------->
+<div id="certificate">
+  <div class="container">
+    <h1 class="sub-title">My Certifications</h1>
+
+    <div class="cert-slider-wrapper">
+      <!-- Left Arrow -->
+      <button class="cert-btn left" onclick="slideLeft()">&#10094;</button>
+
+      <!-- Slider -->
+      <div class="certificate-list" id="certSlider">
+        <div class="cert-card">
+          <i class="fa-brands fa-aws"></i>
+          <h2>AWS Certificate</h2>
+          <p>Designed a simple, scalable cloud hosting architecture using AWS solutions architecture principles.</p>
+          <a href="images/AWS.pdf" download="Arnab_Kundu AWS Certificate" >Certificate</a>
+        </div>
+
+        <div class="cert-card">
+          <i class="fa-solid fa-asterisk"></i>
+          <h2>Walmart Certificate</h2>
+          <p>Engineered efficient data structures, designed scalable software architectures, and modeled relational databases through Walmart’s advanced software engineering simulation.</p>
+         <a href="images/WALMART.pdf" download="Arnab_Kundu Walmart Certificate" >Certificate</a>
+        </div>
+
+        <div class="cert-card">
+         <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+          <h2>Google Cloud</h2>
+          <p>Explored generative AI fundamentals and experimented with Google Cloud’s AI Studio to understand modern AI model creation and workflows</p>
+          <a href="images/google cloud.pdf" download="Arnab_Kundu Google Cloud Certificate" >Certificate</a>
+        </div>
+
+        <div class="cert-card">
+         <i class="fa-brands fa-microsoft" style="color: #f7f6f3;"></i>
+          <h2>Microsoft Power BI</h2>
+          <p>Built interactive dashboards and transformed raw data into clear, decision-ready insights using Microsoft Power BI.</p>
+          <a href="images/Power BI by Microsoft.pdf" download="Arnab_Kundu Microsoft Power BI Certificate" >Certificate</a>
+        </div>
+
+        <div class="cert-card">
+          <i class="fa-brands fa-openai"></i>
+          <h2>TATA GenAI</h2>
+          <p>Leveraged GenAI-driven analytics to explore data, predict risk, and craft strategic business insights through an AI-powered collections simulation</p>
+          <a href="images/TATA GenAI Powered Data Analytics Job Simulation.pdf" download="Arnab_Kundu TATA GenAI Powered Data Analytics Certificate" >Certificate</a>
+        </div>
+        
+        <div class="cert-card">
+       <i class="fa-solid fa-chart-mixed" style="color: #ffffff;"></i>
+          <h2>Deloitte Data Analytics</h2>
+          <p>Gaining hands-on experience in data analysis and forensic technology for real-world business insights..</p>
+          <a href="images/Deloitte.pdf" download="Arnab_Kundu Deloitte Data Analytics Certificate" >Certificate</a>
+        </div>
+
+        <!-- Add more cards if needed -->
+      </div>
+
+      <!-- Right Arrow -->
+      <button class="cert-btn right" onclick="slideRight()">&#10095;</button>
+    </div>
+  </div>
+</div>
+
+<!----------- Project Section ------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/weather.png">
+                <div class="layer">
+                  <h3>Weather-forecast App</h3>
+                  <p>A responsive weather forecasting web application that provides real-time weather updates and accurate forecasts for any location.
+                     It displays temperature, humidity, wind speed, and weather conditions using a clean UI and API integration for live data.</p>
+                  <a href="https://leafy-seahorse-15e1ab.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/tours&travel.png">
+                <div class="layer">
+                    <h3>Tours and travel Web App</h3>
+                    <p>A full-featured tours and travel web application that allows users to explore destinations, view tour packages, and make bookings easily.The platform focuses on a user-friendly experience with dynamic pricing features and seamless trip planning.</p>
+                    <a href="https://travel-planner-tawny.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Portfolio Web App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem rem voluptatibus, sapiente maiores aliquam provident quibusdam reiciendis unde et qui inventore pariatur dicta expedita culpa placeat odit dolore. Id!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+
+<!---------Contact Section--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:arnabkundu143@gmail.com">arnabkundu143@gmail</a></p>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:+91 7001431630">+91 7001431630</a></p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/just._.ak/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/arnab-kundu-1b7a73274/"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="https://github.com/Ak035"><i class="fa-brands fa-github" style="color: #ffffff;"></i> </a>
+                     
+                </div>
+                <a href="images/Resume.Devloper.pdf" download ="Arnab_Kundu Resume" class="btn btn2">Get My Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" id=""  rows="6" placeholder="Your Message"></textarea> 
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> reserved By Arnab</p>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+
+</script>
+<!-- JS for slider-->
+<script>
+  const slider = document.getElementById("certSlider");
+
+  function slideRight() {
+    slider.scrollLeft += slider.offsetWidth / 3;
+  }
+
+  function slideLeft() {
+    slider.scrollLeft -= slider.offsetWidth / 3;
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkfq6-bUhsIE0sv1l6gtvi6o3S8bHgOnbjB3ijvbbla2p2kVGM-DIT_ZlCA1NSwfN35g/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function(){
+            msg.innerHTML =""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+</body>  
+</html>
